@@ -7,7 +7,7 @@
 * dan buka di visual studio code dengan `code .\neo4j`
 * buat file dengan nama "docker-compose.yml"
 * masukkan code :
-`````Javascript 
+```Javascript 
 version: "3.8"
 services:
   neo4j:
@@ -23,9 +23,15 @@ services:
     - ./db/conf:/conf
     - ./db/logs:/logs
     - ./db/plugins:/plugins
-    ````
+   ```
+  
     
 * lalu running di terminal visual studio code dengan `docker-compose up`
+
+# Cara Add library Neo4j di visual studio code
+* open termninal `cd backend`
+* lalu running `yarn`
+* dan add neo4j dengan ` yarn add neo4j-driver`
 
 
 
