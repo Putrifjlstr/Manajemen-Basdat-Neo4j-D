@@ -5,6 +5,25 @@
 
 * buat folder baru di cmd dengan `mkdir neo4j`
 * dan buka di visual studio code dengan `code .\neo4j`
+* buat file dengan nama "docker-compose.yml"
+* masukkan code :
+`````Javascript 
+version: "3.8"
+services:
+  neo4j:
+    image:neo4j: 4.4.16-community
+    ports: 
+      - 7888:7474
+      - 7999:7687
+    restart: unless-stopped
+    environment:
+    - NEO4J_AUTH=neo4j/password
+    volumes:
+    - ./db/data:/data
+    - ./db/conf:/conf
+    - ./db/logs:/logs
+    - ./db/plugins:/plugins
+    `````
 
 
 
