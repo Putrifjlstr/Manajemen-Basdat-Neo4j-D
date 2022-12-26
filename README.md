@@ -23,7 +23,9 @@ services:
     - ./db/conf:/conf
     - ./db/logs:/logs
     - ./db/plugins:/plugins
-    `````
+    ````
+    
+* lalu running di terminal visual studio code dengan `docker-compose up`
 
 
 
