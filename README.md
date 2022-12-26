@@ -1,2 +1,5 @@
 # Parking-Lot
-Simple Project that simulate a little parking lot using ES6 Javascript and manipulate LocalStorage!
+# Cara Instalasi Neo4j via docker
+buka command line dan run 'dockel pull neo4j'
+
+
